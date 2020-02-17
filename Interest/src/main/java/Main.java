@@ -9,16 +9,8 @@ public class Main {
     public static void main(String args[]) throws IOException {
         Scanner scan=new Scanner(System.in);
         OutputStreamWriter streamWriter = new OutputStreamWriter(System.out);
-        streamWriter.write("Enter principle value");
-        streamWriter.flush();
-        double principle=scan.nextDouble();
-        streamWriter.write("Enter rateInPercent value");
-        streamWriter.flush();
-        double rateInPercent=scan.nextDouble();
-        streamWriter.write("Enter timeInYears value");
-        streamWriter.flush();
-        double timeInYears=scan.nextDouble();
-        Interestcalculation intrcal=new InterestcalculationImp(principle,rateInPercent,timeInYears);
+        Interestcalculation intrcal=new InterestcalculationImp();
+        intrcal.readInput();
         streamWriter.write("\n1)Calculate simple interest.\n2)Calculate compound interest\nEnter your choice: ");
         streamWriter.flush();
         int c=scan.nextInt();
