@@ -11,23 +11,14 @@ public class InterestComponents {
         this.timeInYears = timeInYears;
     }
 
-    /**
-     * @return principal
-     */
     public double getPrincipal() {
         return principal;
     }
 
-    /**
-     * @return rateInPercent
-     */
     public double getRateInPercent() {
         return rateInPercent;
     }
 
-    /**
-     * @return timeInYears
-     */
     public double getTimeInYears() {
         return timeInYears;
     }
