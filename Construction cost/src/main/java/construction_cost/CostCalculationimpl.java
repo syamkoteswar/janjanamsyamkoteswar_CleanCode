@@ -26,8 +26,6 @@ public class CostCalculationimpl implements CostCalculation {
 
             val = MY_MAP.get(s) * area;
         } catch (Exception e) {
-            streamWriter.write("Enter valid inputs");
-            streamWriter.flush();
         }
         return val;
     }
