@@ -17,7 +17,7 @@ public class Main {
             int c = scan.nextInt();
             intrcal.displayResult(c);
         } catch (Exception e) {
-            streamWriter.write("\nIoexception");
+            streamWriter.write("\nInvalid Input ");
             streamWriter.flush();
         }
     }
