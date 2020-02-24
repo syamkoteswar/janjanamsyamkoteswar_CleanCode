@@ -1,7 +1,5 @@
 package Interest.calculation;
 
-import Interest.InterestComponents;
-
 public interface calculation {
-    public double calculate(InterestComponents val);
+    public double calculate(double principle, double rateInPercent, double timeInYears);
 }

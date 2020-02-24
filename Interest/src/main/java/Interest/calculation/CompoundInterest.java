@@ -1,12 +1,10 @@
 package Interest.calculation;
 
-import Interest.InterestComponents;
-
 public class CompoundInterest implements calculation {
     @Override
-    public double calculate(InterestComponents val) {
+    public double calculate(double principle, double rateInPercent, double timeInYears) {
         try {
-            return val.getPrincipal() * (Math.pow(1 + val.getRateInPercent() / 100, val.getTimeInYears()) - 1);
+            return principle * (Math.pow(1 + rateInPercent / 100, timeInYears) - 1);
         } catch (Exception e) {
             e.printStackTrace();
         }
